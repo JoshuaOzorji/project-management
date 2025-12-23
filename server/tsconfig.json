@@ -11,6 +11,8 @@
 		"target": "esnext",
 		"moduleResolution": "nodenext",
 		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
 		// "types": [],
 		// For nodejs:
 		// "lib": ["esnext"],
@@ -43,5 +45,5 @@
 		"moduleDetection": "force",
 		"skipLibCheck": true
 	},
-	"include": ["src/**/*", "src/data/**/*.json", "prisma/**/*"]
+	"include": ["src/**/*", "src/data/**/*.json"]
 }
