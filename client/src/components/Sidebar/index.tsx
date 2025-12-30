@@ -25,6 +25,7 @@ import {
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "@/app/redux";
 import { setIsSidebarCollapsed } from "@/state";
+import { useGetProjectsQuery } from "@/state/api";
 
 interface SidebarLinkProps {
   href: string;
@@ -61,6 +62,7 @@ const Sidebar = () => {
   const [showProjects, setShowProjects] = useState(false);
   const [showPriority, setShowPriority] = useState(true);
 
+  const { data: project } = useGetProjectsQuery();
   const dispatch = useDispatch();
   const isSidebarCollapsed = useAppSelector(
     (state) => state.global.isSidebarCollapsed,
