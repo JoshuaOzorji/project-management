@@ -101,6 +101,7 @@ const ReusablePriorityPage = ({ priority }: Props) => {
         isOpen={isModalNewTaskOpen}
         onClose={() => setIsModalNewTaskOpen(false)}
       />
+
       <Header
         name="Priority Page"
         buttonComponent={
